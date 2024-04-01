@@ -31,7 +31,7 @@ export default function Congo() {
         try {
             const authToken = localStorage.getItem('authToken');
 
-            await axios.delete('http://localhost:5000/cart/clearCart', {
+            await axios.delete('https://musicartapi.onrender.com/cart/clearCart', {
                 headers: {
                     Authorization: `Bearer ${authToken}`,
                 },
