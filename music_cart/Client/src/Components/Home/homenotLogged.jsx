@@ -291,12 +291,10 @@ export default function HomenotLogged() {
           </select>
 
           <select className={styles.dropDownPrice} value={selectedPriceRange} onChange={handlePriceRangeChange}>
-            
             <option value="">Price</option>
-            <option value="">₹0 - ₹1,000</option>
-            <option value="">₹1,000 - ₹10,000</option>
-            <option value="">₹10,000 - ₹20,000</option>
-          
+            <option value="0-1000">₹0 - ₹1,000</option>
+            <option value="1000-10000">₹1,000 - ₹10,000</option>
+            <option value="10000-20000">₹10,000 - ₹20,000</option>
           </select>
 
           <select className={styles.dropDownsort} value={sortingOption} onChange={handleSortingChange}>
