@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.MainContainer {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+  }
+
+
+.headerInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    background: rgba(46, 0, 82, 1);
+    margin-top: -9px;
+    width: 101.4%;
+    height: 30px;
+    margin-left: -8px;
+    color: rgba(255, 255, 255, 1);
+}
+  
+  .headerInfoLeft{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    gap: 5px;
+  }
+
+  .phoneImg {
+    width: 20px;
+    height: 20px;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .number {
+    height: 21px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 2px;
+  }
+
+  .headerInfoCenter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 27px;
+    margin-left: 500px;
+  }
+
+  .lineImg {
+    height: 15px;
+    width: 2px;
+  }
+
+  .mainheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .mainheaderLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-left: 5%;
+  }
+
+  .logoImg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .headerText {
+    font-size: 20px;
+    color: rgba(46, 0, 82, 1);
+  }
+
+  .headerSpan {
+    font-size: 10px;
+    margin-top: 8px;
+  }
+
+  .Invoicebtn {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 11px;
+    margin-top: 8px;
+    cursor: pointer;
+  }
+
+  .mainheaderRight {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .viewCartBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 47px;
+    background-color: rgba(29, 112, 0, 1);
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .cartImg {
+    width: 15px;
+    height: 15px;
+    margin-top: 0px;
+    margin-left: 5px;
+  }
+
+  .viewCartText, .count {
+    color: white;
+  }
+
+  .initialsBtn {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    border: 1px solid rgba(46, 0, 82, 1);
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 20px; 
+  }
+
+  .dropdownContent {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    margin-top: 50px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+ 
+  .initialsBtn:focus + .dropdownContent {
+    display: block;
+  }
+  
+
+  .dropdownContent span {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color:rgba(0, 0, 0, 1);
+  }
+  
+  .dropdownContent span:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdownContent button {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .dropdownContent button:hover {
+    background-color: #f1f1f1;
+  }
+
+  .ImgDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 22%;
+    width: 50%;
+    height: 100px;
+    background: linear-gradient(90deg, #7286B4 0%, #E794CE 100%);
+    border: none;
+    border-radius: 29px;
+  }
+
+  .discImgDiv {
+    margin-left: 10%;
+    font-size: 30px;
+  }
+
+  .girlImg {
+    height: 120px;
+    width: 200px;
+    margin-top: -22px;
+    margin-right: 10%;
+  }
+
+  .searchBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    height: 30px;
+    border: 3px solid rgba(200, 200, 200, 1);
+    border-radius: 48px;
+    margin-top: 20px;
+    margin-left: 22%;
+  }
+
+  .searchIcon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+
+  .searchInput {
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-left: 20px;
+  }
+
+  .functionDiv {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+  }
+
+  .view {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 5%;
+  }
+
+  .viewIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .gridViewBtn, .listViewBtn {
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    height: 20px;
+    margin-left: 18%;
+    margin-top: 20px;
+  }
+
+  .dropDownType {
+    border: none;
+    width: 130px;
+    border-radius: 34.15px;
+    background: rgba(217, 217, 217, 1);
+    cursor: pointer;
+  }
+
+  .dropDownType option {
+    background-color: white;
+  }
+
+  .dropDownBrand {
+    border: none;
+    border-radius: 34.15px;
+    background: rgba(217, 217, 217, 1);
+    width: 80px;
+    cursor: pointer;
+  }
+
+  .dropDownBrand option {
+    background-color: white;
+  }
+
+  .dropDowncolor {
+    border: none;
+    border-radius: 34.15px;
+    background: rgba(217, 217, 217, 1);
+    cursor: pointer;
+  }
+
+  .dropDowncolor option {
+    background-color: white;
+  }
+
+  .dropDownPrice {
+    border: none;
+    border-radius: 34.15px;
+    background: rgba(217, 217, 217, 1);
+    width: 60px;
+    cursor: pointer;
+  }
+
+  .dropDownprice option {
+    background-color: white;
+  }
+
+  .dropDownsort {
+    border: 3px solid rgba(225, 225, 225, 1);
+    border-radius: 30.73px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+
+  .feedbackDiv {
+    position: relative;
+    margin-left: 85%;
+    z-index: 1000;
+    margin-bottom: 50px;
+  }
+
+  .feedbackForm {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    z-index: 1000; 
+    padding: 20px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.37);
+    width: 100%;
+    height: 220px;
+    bottom: 110%;
+    right: 30%;
+  }
+
+  .feedbackType {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .feedbackTypeDropDown {
+    border: 1px solid rgba(145, 145, 145, 1);
+    width: 73%;
+    height: 30px;
+    background: rgb(236, 227, 227);
+  }
+  
+  .feedbackDetailText {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .feedbackDetailTextArea {
+    background: rgb(236, 227, 227);;
+  }
+
+  .feedbackSubmit {
+    border: none;
+    background: rgba(46, 0, 82, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 26.12px;
+    height: 30px;
+    margin-top: 10px;
+    width: 40%;
+    margin-left: 70px;
+  }
+  
+  .blurEffect {
+    filter: blur(5px);
+  }
+  
+
+  .feedbackForm,
+  .blurEffect {
+    transition: filter 0.3s ease-in-out;
+  }
+
+  .feedbackBtn {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .feedbackImg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: rgba(46, 0, 82, 1);
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+
+  .wholeProductsDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    max-height: calc(100vh - 200px); 
+    overflow-y: auto;
+    scrollbar-width: thin; 
+    scrollbar-color: rgba(46, 0, 82, 0.5) rgba(46, 0, 82, 0.2);
+  }
+
+  .wholeProductsDiv::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+  .wholeProductsDiv::-webkit-scrollbar-track {
+    background: rgba(46, 0, 82, 0.2); 
+  }
+  
+  .wholeProductsDiv::-webkit-scrollbar-thumb {
+    background-color: rgba(46, 0, 82, 0.5); 
+    border-radius: 5px; 
+  }
+  
+  .productDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .productImg {
+    height: 200px; 
+    overflow: hidden;
+  }
+  
+  .productImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .productBtn {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .productInfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  
+  .productName {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .productPrice {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .productColourandType {
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  .wholeProductsDiv.list {
+     display: block;
+  }
+  
+  
+  .productDiv.list {
+    display: flex;
+    flex-direction: row; 
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+    width: 60%;
+    margin-left: 20%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .productImg.list {
+    width: 250px;
+    height: 250px; 
+    margin-right: 10px; 
+  }
+
+  .productDetails {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .detailsButton {
+    width: 100px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+    border-radius: 26.12px;
+    background: rgba(46, 0, 82, 1);
+    color: white;
+    cursor: pointer;
+  }
+
+  .errorMessage {
+    font-size: 10px;
+    color: rgba(255, 0, 0, 1);
+  }
+  
+ 
+  
+  @media (max-width: 768px) {
+    .headerInfo {
+      display: none; 
+    }
+    
+    .mainheader {
+      display: none;
+    }
+
+    .feedbackDiv {
+      display: none;
+    }
+
+    .searchBar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 322px;
+      height: 35px;
+      border-radius: 0;
+      z-index: 1000; 
+      background-color: rgba(255, 255, 255, 0.9); 
+      border: none;
+      border-bottom: 1px solid rgba(200, 200, 200, 1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+  
+    .searchInput {
+      margin-left: 20px; 
+    }
+  
+    .headerSpan {
+      display: none; 
+    }
+  
+    .ImgDiv {
+      width: 340px;
+      margin-left: 10px;
+      margin-top: 60px;
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+      height: 50px; 
+      padding: 20px 0; 
+    }
+
+    .discImgDiv {
+      font-size: 20px;
+      margin-top: 0px;
+      margin-left: -130px;
+    }
+  
+    .girlImg {
+      width: 112px;
+      height: 132px;
+      margin-left: 238px;
+      margin-top: -100px;
+    }
+  
+    .functionDiv {
+      width: 360px;
+      margin-left: -40px; 
+    }
+  
+    .dropdown {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 375px;
+      overflow-y: hidden;
+    }
+
+    .dropDownType {
+      width: 115px;
+      height: 25px;
+      font-size: 12px;
+      border-radius: 6.26px;
+    }
+
+    .dropDownBrand {
+      width: 75px;
+      height: 25px;
+      font-size: 12px;
+      border-radius: 6.26px;
+    }
+
+    .dropDowncolor {
+      width: 60px;
+      height: 25px;
+      font-size: 12px;
+      border-radius: 6.26px;
+    }
+
+    .dropDownPrice {
+      width: 55px;
+      height: 25px;
+      font-size: 12px;
+      border-radius: 6.26px;
+    }
+  
+    .wholeProductsDiv {
+      width: 375px;
+      margin-top: 50px;
+      margin-left: -10px; 
+    }
+
+    .productDiv {
+      width: 160px;
+    }
+  
+    .footer {
+      display: none; 
+    }
+  
+    .MobileNavBar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 375px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.9); 
+      border-top: 1px solid rgba(200, 200, 200, 1);
+      z-index: 1000; 
+    }
+
+    .button1, .button2, .button3 {
+      display: flex;
+      flex-direction: column;
+      background: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+  }
+  
+  .buttonText {
+      margin-left: -5px;
+      font-size: 14px;
+  }
+  
+  .buttonTextCart {
+      font-size: 14px; 
+  }
+  
+}
+
+  

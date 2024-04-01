@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.MainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+  }
+
+
+.headerInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(46, 0, 82, 1);
+    margin-top: -9px;
+    width: 101.4%;
+    height: 30px;
+    margin-left: -8px;
+    color: rgba(255, 255, 255, 1);
+}
+  
+  .headerInfoLeft{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    gap: 5px;
+  }
+
+  .phoneImg {
+    width: 20px;
+    height: 20px;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .number {
+    height: 21px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 2px;
+  }
+
+  .headerInfoCenter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 27px;
+  }
+
+  .lineImg {
+    height: 15px;
+    width: 2px;
+  }
+
+  .headerInfoRight {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    gap: 8px;
+  }
+
+  .outbtn {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-right: 10px;
+    font-size: 15px;
+  }
+
+  .mainheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .mainheaderLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-left: 5%;
+  }
+
+  .logoImg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .headerText {
+    font-size: 20px;
+    color: rgba(46, 0, 82, 1);
+  }
+
+  .headerSpan {
+    font-size: 10px;
+    margin-top: 8px;
+  }
+
+  .ProductName {
+    font-size: 10px;
+    margin-top: 8px;
+  }
+
+  .back2productBtn {
+    width: 150px;
+    height: 30px;
+    margin-left: 80px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 14px;
+    background: rgba(46, 0, 82, 1);
+    outline: none;
+    color: white;   
+    cursor: pointer; 
+  }
+
+  .CheckoutHeader {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .CheckOutDetailsWholeDiv {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .CheckOutDetailsWhole {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-top: 30px;
+  }
+
+  .CheckOutAddressDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 450px;
+    border-bottom: 2.87px solid rgba(225, 225, 225, 1);
+    height: 75px;
+  }
+
+  .CheckOutAddressText {
+    color: rgba(181, 43, 0, 1);
+    font-weight: 400;
+  }
+
+  .CheckOutAddress {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgba(121, 121, 121, 1);
+  }
+
+  .CheckoutPayment {
+    display: flex;
+    flex-direction: row;
+    gap: 450px;
+    margin-top: 15px;
+    border-bottom: 2.87px solid rgba(225, 225, 225, 1);
+    height: 30px;
+  }
+
+  .CheckOutPaymentText {
+    color: rgba(181, 43, 0, 1);
+    font-weight: 400;
+  }
+
+  .paymentDropdown {
+    height: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 1);
+    color: rgba(121, 121, 121, 1);
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: rgba(46, 0, 82, 1);
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+
+  .CheckoutitemsDiv {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  .CheckoutitemsText {
+    color: rgba(181, 43, 0, 1);
+    font-weight: 400;
+  }
+
+  .ProductGrid {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 300px;
+    height: 100px;
+    margin-left: 350px;
+    overflow-y: auto;
+  }
+
+  .ProductGrid::-webkit-scrollbar {
+    width: 8px; 
+  }
+  
+  .ProductGrid::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); 
+  }
+  
+  .ProductGrid::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;
+  }
+  
+  .ProductGrid::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+
+  .Checkoutitems {
+     width:112.64px;
+     height: 110px;
+  }
+
+  .itemBtn {
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .itemBtnImg {
+    width: 70px;
+    height: 70px;
+  }
+
+  .itemDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    margin-left: 580px;
+    margin-top: 100px; 
+  }
+
+  .itemName {
+    color: rgba(0, 0, 0, 1);
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .itemColor, .itemStock {
+    color: rgba(121, 121, 121, 1);
+    font-weight: 400;
+  }
+
+  .itemEsti, .itemDelivery {
+    color:rgba(0, 0, 0, 1);
+    font-weight: 400;
+  }
+
+  .placeOrderDiv {
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+    margin-left: 80px;
+    gap: 10px;
+  }
+
+  .placeOrderBtn {
+    width: 120px;
+    height: 30px;
+    margin-top: 13px;
+    background: rgba(255, 214, 0, 1);
+    border: none;
+    border-radius: 8px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 500;
+  }
+
+  .placeOrderPara {
+    font-size: 13px;
+    color: rgba(181, 43, 0, 1);
+    font-weight: 400;
+  }
+
+  .placeOrderDivRight {
+    display: flex;
+    flex-direction: column;
+    margin-left: 73%;
+    margin-top: -27%;
+    width: 380px;
+    height: 230px;
+    border: 3px solid rgba(225, 225, 225, 1);
+    border-radius: 16px;
+  }
+
+  .placeOrderBtnRight {
+    width: 120px;
+    height: 30px;
+    margin-top: 13px;
+    background: rgba(255, 214, 0, 1);
+    border: none;
+    border-radius: 8px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 500;
+    margin-left: 60px;
+    width: 70%;
+  }
+
+  .placeOrderRightPara {
+    font-size: 12px;
+    margin-left: 60px;
+  }
+
+  .placeOrderRight1stHalf {
+    border-bottom: 2.87px solid rgba(225, 225, 225, 1);
+  }
+
+  .placeOrderRight2ndHalf {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-bottom: 2.87px solid rgba(225, 225, 225, 1);
+    margin-left: 10px
+  }
+
+  .placeOrderRight2ndHalfItems {
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    color: rgba(121, 121, 121, 1);
+    font-size: 14px;
+  }
+
+  .placeOrderRight2ndHalfIDeli {
+    display: flex;
+    flex-direction: row;
+    gap: 236px;
+    color: rgba(121, 121, 121, 1);
+    font-size: 14px;
+  }
+
+  .placeOrderRight3rdHalf {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    margin-top: 10px;
+    color: rgba(181, 43, 0, 1);
+    margin-left: 10px;
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    .DesktopConatiner, .placeOrderDivRight {
+        display: none;
+    }
+
+    .mobileviewContainer {
+        display: block;
+        width: 360px;
+    }
+
+    .headerLogin {
+        display: flex;
+        flex-direction: row;
+        background: rgba(46, 0, 82, 1);
+        margin-top: -8px;
+        width: 104.7%;
+        margin-left: -10px;
+    }
+
+    .musiclogo {
+        width: 30px;
+        height: 30px;
+        margin-top: 7px;
+        margin-left: 15px;
+    }
+
+    .musicheader {
+        font-size: 16px;
+        color: white;
+        margin-left: 5px;
+    }
+
+    .mobileBackButton {
+        margin-top: 12px;
+        margin-left: 15px;
+        border-radius: 50px;
+        border: none;
+        outline: none;
+        background: transparent;
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.33);
+    }
+
+    .mobileDetailsHeader {
+        margin-left: 5px;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .mobileDetailsAddressDiv {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        border-bottom: 2.87px solid rgba(225, 225, 225, 1);
+        height: 90px;
+    }
+
+    .mobileDetailsAddressText {
+        font-size: 15px;
+        color: rgba(181, 43, 0, 1);
+        font-weight: 600;   
+    }
+
+    .mobileDetailsAddress {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 15px;
+    }
+
+    .mobileDetailsUserName {
+        font-size: 13px;
+        color: rgba(121, 121, 121, 1);
+    }
+
+    .AddressText {
+        width: 170px;
+        height: 30px;
+        color: rgba(121, 121, 121, 1);
+    }
+
+    .mobileDetailsPayment {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        border-bottom: 2.87px solid rgba(225, 225, 225, 1);
+        margin-top: 8px;
+        height: 50px;
+    }
+
+    .mobileDetailsPaymentText {
+        font-size: 15px;
+        color: rgba(181, 43, 0, 1);
+        font-weight: 600;
+    }
+
+    .mobileDetailspaymentDropdown {
+        width: 178px;
+        height: 18px;
+        margin-left: 15px;
+        color: rgba(121, 121, 121, 1);
+    }
+
+    .mobileDetailsitemsDiv {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    .mobileDetailsitemsText {
+        font-size: 15px;
+        color: rgba(181, 43, 0, 1);
+        font-weight: 600;
+    }
+
+    .mobileDetailsProductGrid {
+      width: 184px;
+      height: 100px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin-left: 15px;
+      margin-top: 5px;
+      overflow-y: auto;
+    }
+
+    .mobileDetailsitems {
+      display: flex;
+      flex-direction: row;
+      margin-top: 10px;
+    }
+
+    .mobileDetailsitemBtn {
+      border: 1px solid black;
+      border-radius: 3.12px;
+      background: transparent;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .mobileDetailsitemBtnImg {
+      width: 50px;
+      height: 50px;
+      margin-top: 3px;
+    }
+
+    .mobileDetailsitemDetails {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      margin-left: 15px;
+      
+    }
+
+    .mobileDetailsitemName {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .mobileDetailsitemColor, .mobileDetailsitemStock {
+      font-size: 13px;
+      font-weight: 400;
+      color: rgba(121, 121, 121, 1);
+    }
+
+    .mobileDetailsitemEsti, .mobileDetailsitemDelivery {
+      font-size: 13px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 1);
+    }
+
+    .MobileNavBar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 375px;
+      position: fixed;
+      bottom: 40;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.9); 
+      border-top: 1px solid rgba(200, 200, 200, 1);
+      z-index: 1000; 
+      border: 1px solid rgba(200, 200, 200, 1);
+    }
+
+    .button1, .button2, .button3 {
+      display: flex;
+      flex-direction: column;
+      background: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+  }
+  
+  .buttonText {
+      margin-left: -5px;
+      font-size: 14px;
+  }
+  
+  .buttonTextCart {
+      font-size: 14px; 
+  }
+
+  .OrderSummary {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1.14px solid rgba(225, 225, 225, 1);
+    height: 60px;
+  }
+
+  .OrderSummaryText {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 30px;
+    color: rgba(181, 43, 0, 1);
+
+  }
+
+  .mobileDetailsOrderBtn {
+    width: 80%;
+    margin-left: 20px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 214, 0, 1);
+  }
+
+  }
+

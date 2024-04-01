@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.MainContainer {
+    height: 100vh;
+  }
+
+.MainHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-left: 5%;
+  }
+
+  .logoImg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .headerText {
+    font-size: 20px;
+    color: rgba(46, 0, 82, 1);
+  }
+
+  .MainContentDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 14px 16px 23px 2px rgba(0, 0, 0, 0.11);
+    width: 1004px;
+    height: 549px;
+    margin-left: 15%;
+    border: 3px solid rgba(227, 227, 227, 1);
+    border-radius: 3px;
+    gap: 20px;
+  }
+
+  .CongoImg {
+    width: 150px;
+    height: 150px;
+    margin-top: -150px;
+  }
+
+  .OrderPlacedText {
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .CongiText {
+    margin-top: 20px;
+    color: rgba(150, 150, 150, 1);
+  }
+
+  .backBtn {
+    border: none;
+    outline: none;
+    margin-top: 50px;
+    width: 300px;
+    height: 30px;
+    border-radius: 14px;
+    background: rgba(46, 0, 82, 1);
+    color: white;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: rgba(46, 0, 82, 1);
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    .MainHeader, .MainContentDiv, .footer {
+        display: none;
+    }
+
+    .headerLogin {
+        display: flex;
+        flex-direction: row;
+        background: rgba(46, 0, 82, 1);
+        margin-top: -8px;
+        width: 104.7%;
+        margin-left: -10px;
+    }
+
+    .musiclogo {
+        width: 30px;
+        height: 30px;
+        margin-top: 7px;
+        margin-left: 15px;
+    }
+
+    .musicheader {
+        font-size: 16px;
+        color: white;
+        margin-left: 5px;
+    }
+
+    .mobileMainContentDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 14px 16px 23px 2px rgba(0, 0, 0, 0.11);
+        gap: 20px;
+        margin-top: 100px;
+        width: 80%;
+        margin-left: 35px;
+        border: 3px solid rgba(227, 227, 227, 1);
+        border-radius: 3px;
+        height: 350px;
+    }
+
+    .mobileCongoImg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .mobileOrderPlacedText {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .mobileCongiText {
+        font-size: 12px;
+        color: rgba(150, 150, 150, 1);
+        margin-left: 5px;
+    }
+
+    .mobilebackBtn {
+        border: none;
+        outline: none;
+        margin-top: 50px;
+        width: 200px;
+        height: 30px;
+        border-radius: 14px;
+        background: rgba(46, 0, 82, 1);
+        color: white;
+      }
+
+      .MobileNavBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 375px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9); 
+        border-top: 1px solid rgba(200, 200, 200, 1);
+        z-index: 1000; 
+        border: 1px solid rgba(200, 200, 200, 1);
+      }
+      .buttonWrapper {
+        display: inline-block;
+        position: relative; 
+      }
+      
+      .buttonWrapper::before {
+        content: ''; 
+        position: absolute; 
+        top: 0;
+        left: 0; 
+        width: 100%; 
+        height: 3px; 
+        background-color: rgba(46, 0, 82, 1); 
+        transform: scaleY(0);
+        transform-origin: top; 
+        transition: transform 0.3s ease; 
+      }
+
+      .buttonWrapper:hover::before {
+        transform: scaleY(1); 
+      }
+  
+      .button1, .button2, .button3, .button4 {
+        display: flex;
+        flex-direction: column;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+    
+    .buttonText {
+        margin-left: -5px;
+        font-size: 14px;
+    }
+
+    .buttonTextInvoice, .buttonTextLogin {
+        margin-top: 5px;
+    }
+    
+    .buttonTextCart {
+        font-size: 14px; 
+    }
+
+    
+  }
+
+ 

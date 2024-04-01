@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.MainContainer {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+  }
+
+
+.headerInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(46, 0, 82, 1);
+    margin-top: -9px;
+    width: 101.4%;
+    height: 30px;
+    margin-left: -8px;
+    color: rgba(255, 255, 255, 1);
+}
+  
+  .headerInfoLeft{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    gap: 5px;
+  }
+
+  .phoneImg {
+    width: 20px;
+    height: 20px;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .number {
+    height: 21px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 2px;
+  }
+
+  .headerInfoCenter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 27px;
+  }
+
+  .lineImg {
+    height: 15px;
+    width: 2px;
+  }
+
+  .headerInfoRight {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    gap: 8px;
+  }
+
+  .headerInfoRight {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    gap: 8px;
+  }
+
+  .lobtn {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+  }
+
+  .signObtn {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+  }
+
+  .mainheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .mainheaderLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-left: 5%;
+  }
+
+  .logoImg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .headerText {
+    font-size: 20px;
+    color: rgba(46, 0, 82, 1);
+  }
+
+  .headerSpan {
+    font-size: 10px;
+    margin-top: 8px;
+  }
+
+  .ProductName {
+    font-size: 10px;
+    margin-top: 8px;
+  }
+
+  .viewCartBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+    margin-right: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 47px;
+    background-color: rgba(29, 112, 0, 1);
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .cartImg {
+    width: 15px;
+    height: 15px;
+    margin-top: 0px;
+    margin-left: 5px;
+  }
+
+  .viewCartText, .count {
+    color: white;
+  }
+
+  .back2productBtn {
+    width: 150px;
+    height: 30px;
+    margin-left: 80px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 14px;
+    background: rgba(46, 0, 82, 1);
+    outline: none;
+    color: white;    
+  }
+
+  .productHeader {
+    margin-left: 80px;
+    margin-top: -20px;
+  }
+
+  .productNameAbout {
+    font-size: 20px;
+    line-height: 42px;
+    font-weight: 600;
+  }
+
+  .detailsDiv {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .productImg {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 600px;
+    height: calc(100vh-200px);
+    margin-left: 150px;
+  }
+
+  .ProImg {
+    width: 330px;
+    height: 330px;
+    border: 5px solid rgba(0, 0, 0, 1);
+    border-radius: 16px;
+    margin-left: 30px;
+  }
+
+  .defaultImg {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .GuyImg, .Side1Img, .Side2Img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .productDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 150px;
+  }
+
+  .itemName {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .starReview {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .starImg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .otherDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .Info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Infolist {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .itemBrand {
+    margin-top: 10px;
+  }
+
+  .Stock {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .avail {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .itemBrandDiv {
+    margin-top: 5px;
+  }
+
+  .itemBrand {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .Buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 180px;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .Add {
+    width: 250px;
+    height: 30px;
+    background-color: rgba(255, 214, 0, 1);
+    color: rgba(0, 0, 0, 1);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+
+  .Buy {
+    width: 250px;
+    height: 30px;
+    background-color: rgba(255, 184, 0, 1);
+    color: rgba(0, 0, 0, 1);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: rgba(46, 0, 82, 1);
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .headerInfo, .mainheader, .back2product, .productHeader, .detailsDiv, .footer{
+      display: none;
+    }
+
+    .mobileviewContainer {
+      display: block;
+      width: 360px;
+  }
+
+  .headerLogin {
+      display: flex;
+      flex-direction: row;
+      background: rgba(46, 0, 82, 1);
+      margin-top: -8px;
+      width: 104.7%;
+      margin-left: -10px;
+  }
+
+  .musiclogo {
+      width: 30px;
+      height: 30px;
+      margin-top: 7px;
+      margin-left: 15px;
+  }
+
+  .musicheader {
+      font-size: 16px;
+      color: white;
+      margin-left: 5px;
+  }
+
+  .mobileBackButton {
+      margin-top: 12px;
+      margin-left: 15px;
+      border-radius: 50px;
+      border: none;
+      outline: none;
+      background: transparent;
+      box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.33);
+  }
+
+  .mobileBuyButton1 {
+    border: none;
+    outline: none;
+    width: 300px;
+    height: 30px;
+    background: rgba(255, 184, 0, 1);
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+
+  .mobileproductImg {
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .mobileThumbnailScroll {
+    display: flex;
+    flex-direction: row;
+    gap: 135px;
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin-left: 100px;
+  }
+
+  .mobileThumbnailImg {
+    max-width: 316px;
+    height: 200px;
+    scroll-snap-align: start;
+    border: 2px solid black;
+  }
+
+  .mobileproductDetails {
+    margin-top: 20px;
+    display: block;
+    margin-left: 15px
+  }
+
+  .mobileitemName {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .mobilestarReview {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mobilestarImg {
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+  }
+
+  .mobileReviewText {
+    margin-left: 5px;
+    margin-top: 9px;
+  }
+
+  .mobileproductNameAbout {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .mobileotherDetails {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: -5px;
+  }
+
+  .mobileInfo {
+    max-width: 40vh;
+    margin-top: 5px;
+    overflow-y: auto;
+  }
+
+  .mobileInfoAboutText {
+    font-size: 13px;
+  }
+
+  .mobileInfolist {
+    font-size: 13px;
+    margin-left: -15px;
+  }
+
+  .mobileStock {
+    font-size: 13px;
+  }
+
+  .mobileavail {
+    font-weight: 600;
+  }
+
+  .mobileitemBrandDiv {
+    font-size: 13px;
+  }
+
+  .mobileitemBrand {
+    font-weight: 600;
+  }
+
+  .mobileButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+  }
+
+  .mobileAdd {
+    border: none;
+    outline: none;
+    width: 250px;
+    height: 30px;
+    background: rgba(255, 214, 0, 1);
+    border-radius: 8px;
+    margin-left: 20px;
+  }
+
+  .mobileBuy {
+    border: none;
+    outline: none;
+    width: 250px;
+    height: 30px;
+    background: rgba(255, 184, 0, 1);
+    border-radius: 8px;
+    margin-left: 20px;
+  }
+
+  .MobileNavBar {
+    position: fixed;
+    left: 0;
+    bottom: 40%;
+    transform: translateY(50%); 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    background-color: #fff; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; 
+  }
+
+  .button1, .button2, .button3 {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.buttonText {
+    margin-left: -5px;
+    font-size: 14px;
+}
+
+.buttonTextCart {
+    font-size: 14px; 
+}
+
+  }

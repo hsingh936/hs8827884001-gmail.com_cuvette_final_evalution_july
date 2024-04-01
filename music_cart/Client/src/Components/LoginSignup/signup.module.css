@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.MainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+.headerSignup {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.musiclogo {
+    height: 40px;
+    width: 40px;
+    margin-top: 15px;
+}
+
+.musicheader {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.subMainContainer {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #D9D9D9;
+  border-radius: 23.2px;
+  width: 500px;
+  height: 586px;
+  margin-bottom: 100px;
+}
+
+.subContainerHeader {
+    width: 338px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  gap: 10px;
+}
+
+.inputField {
+    width: 447px;
+    height: 35px;
+    border: 2px solid #B6B6B6;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.term_cond {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.contbtn {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+.contbtn button {
+    padding: 10px 20px;
+    width: 447px;
+    background-color: rgba(46, 0, 82, 1);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+     
+  
+.para {
+        text-align: center;
+        margin-left: 22px;
+  }
+
+.siginParaBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+
+.siginBtn {
+    cursor: pointer;
+    text-decoration: underline;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.rightReservedText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  margin-top: 12px;
+  background-color: rgba(46, 0, 82, 1);
+  color: #D9D9D9;
+}
+
+.errorInput {
+    border: 1px solid red;
+  }
+
+.errorText {
+    color: red;
+    font-size: 12px;
+    margin-top: 0px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .MainContainer {
+      width: 340px;
+      padding: 20px; 
+    }
+
+    .headerSignup {
+      font-size: 15px;
+      height: 50px;
+      width: 440px;
+      margin-right: -5%;
+      margin-top: -10%;
+      background-color: rgba(46, 0, 82, 1);
+    }
+
+    .musiclogo {
+      width: 32px;
+      height: 32px;
+      margin-top: 10px;
+      margin-left: 14px;
+    }
+
+    .musicheader {
+      font-size: 19px;
+      margin-left: 5px;
+    }
+
+    .welcomeText {
+      margin-right: 65%;
+    }
+  
+    .subMainContainer {
+      width: 90%;
+      height: 480px;
+      border-radius: 0px; 
+    }
+
+    .subContainerHeader {
+      font-size: 10px;
+    }
+
+    .accountText {
+      color: gray;
+    }
+
+    .signupForm {
+      font-size: 10px;
+      margin-top: -12px;
+    }
+  
+    .inputField,
+    .contbtn button {
+      width: calc(100% - 20px); 
+    }
+
+    .term_cond {
+      font-size: 10px;
+      color: black;
+      font-weight: 500;
+    }
+
+    .line {
+      font-size: 10.77px;
+    }
+
+    .siginPara {
+      font-size: 15px;
+    }
+
+    .rightReservedText {
+      width: 440px;
+      margin-top: 115px;
+      margin-left: -58px;
+    }  
+  }
+
+
+
+
+
+  
