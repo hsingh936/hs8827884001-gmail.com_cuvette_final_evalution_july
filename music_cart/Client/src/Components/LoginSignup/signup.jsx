@@ -10,6 +10,7 @@ const Signup = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleInputChange = (e) => {
@@ -45,6 +46,7 @@ const Signup = () => {
 
   const handleSubmit = async () => {
     if (validateForm()) {
+      setLoading(true); 
       try {
         const response = await axios.post('https://musicartapi.onrender.com/auth/signup', {
           name,
@@ -56,7 +58,8 @@ const Signup = () => {
         navigate('/login');
       } catch (error) {
         console.error('Error submitting form:', error);
-       
+      } finally {
+        setLoading(false); 
       }
     }
   };
@@ -68,11 +71,9 @@ const Signup = () => {
   const [showWelcome, setShowWelcome] = useState(false);
   const [showAccountText, setShowAccountText] = useState(false);
 
-
   useEffect(() => {
     const handleResize = () => {
       const windowWidth = window.innerWidth;
-      
       const showWelcomeText = windowWidth <= 768; 
       setShowWelcome(showWelcomeText);
     };
@@ -98,8 +99,6 @@ const Signup = () => {
     };
   }, []);
 
-
-
   return (
     <div className={styles.WholeContainer}>
       <div className={styles.MainContainer}>
@@ -112,11 +111,10 @@ const Signup = () => {
 
         <div className={styles.subMainContainer}>
           <div className={styles.subContainer}>
-          <h1 className={styles.subContainerHeader}>
-            Create Account
-            {showAccountText && <span className={styles.accountText}>&nbsp;. Don't have an account</span>}
-          </h1>
-
+            <h1 className={styles.subContainerHeader}>
+              Create Account
+              {showAccountText && <span className={styles.accountText}>&nbsp;. Don't have an account</span>}
+            </h1>
 
             <div className={styles.signupForm}>
               <span>Your Name</span>
@@ -158,7 +156,6 @@ const Signup = () => {
                 onChange={handleInputChange}
                 placeholder={errors.password ? errors.password : 'Enter your password'}
               />
-
             </div>
 
             <div className={styles.term_cond}>
@@ -169,7 +166,7 @@ const Signup = () => {
             </div>
 
             <div className={styles.contbtn}>
-              <button onClick={handleSubmit}>Continue</button>
+              <button onClick={handleSubmit} disabled={loading}>{loading ? 'Loading...' : 'Continue'}</button>
             </div>
 
             <div className={styles.para}>
@@ -179,7 +176,6 @@ const Signup = () => {
             </div>
 
             <span className={styles.rightReservedText}>Musicart | All rights reserved</span>
-
           </div>
         </div>
       </div>
