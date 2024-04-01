@@ -341,7 +341,7 @@ export default function HomenotLogged() {
           {initialsDropdownVisible && (
             <div className={styles.dropdownContent}>
               <span>{userName}</span>
-              <button>Logout</button>
+              <button onClick={handleLogOutMoileClick}>Logout</button>
             </div>
           )}
 
