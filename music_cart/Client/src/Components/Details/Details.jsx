@@ -44,7 +44,7 @@ const Details = () => {
   useEffect(() => {
     const fetchProductDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/product/${productId}`);
+        const response = await axios.get(`https://musicartapi.onrender.com/product/${productId}`);
         const data = response.data;
         setProduct(data);
       } catch (error) {
@@ -65,7 +65,7 @@ const Details = () => {
         },
       };
 
-      await axios.post('http://localhost:5000/cart/add', {
+      await axios.post('https://musicartapi.onrender.com/cart/add', {
         userId,
         brand: product.brand,
         name: product.name,
@@ -95,7 +95,7 @@ const Details = () => {
         },
       };
 
-      await axios.post('http://localhost:5000/cart/add', {
+      await axios.post('https://musicartapi.onrender.com/cart/add', {
         userId,
         brand: product.brand,
         name: product.name,
@@ -119,7 +119,7 @@ const Details = () => {
   const fetchCartCount = async () => {
     try {
       const authToken = localStorage.getItem('authToken');
-      const response = await axios.get('http://localhost:5000/cart/cartCount', {
+      const response = await axios.get('https://musicartapi.onrender.com/cart/cartCount', {
         headers: {
           Authorization: `Bearer ${authToken}`,
         },
