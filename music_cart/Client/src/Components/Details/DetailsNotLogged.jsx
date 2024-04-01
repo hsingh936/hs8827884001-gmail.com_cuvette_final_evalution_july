@@ -49,7 +49,7 @@ const DetailsNotLogged = () => {
   useEffect(() => {
     const fetchProductDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/product/${productId}`);
+        const response = await axios.get(`https://musicartapi.onrender.com/product/${productId}`);
         const data = response.data;
         setProduct(data);
       } catch (error) {
