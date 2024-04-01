@@ -36,7 +36,7 @@ function InvoiceDetails() {
   useEffect(() => {
     const fetchInvoiceDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/checkout/invo/${checkoutId}`);
+        const response = await axios.get(`https://musicartapi.onrender.com/checkout/invo/${checkoutId}`);
 
         const data = response.data;
         setInvoice(data);
