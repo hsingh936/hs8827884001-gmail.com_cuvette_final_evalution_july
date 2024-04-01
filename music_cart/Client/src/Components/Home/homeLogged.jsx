@@ -65,7 +65,7 @@ export default function HomenotLogged() {
       
       const authToken = localStorage.getItem('authToken');
 
-      const response = await axios.get(`http://localhost:5000/auth/username`, {
+      const response = await axios.get(`https://musicartapi.onrender.com/auth/username`, {
         headers: {
           Authorization: `Bearer ${authToken}`, 
         },
@@ -85,7 +85,7 @@ export default function HomenotLogged() {
   const fetchCartCount = async () => {
     try {
       const authToken = localStorage.getItem('authToken');
-      const response = await axios.get('http://localhost:5000/cart/cartCount', {
+      const response = await axios.get('https://musicartapi.onrender.com/cart/cartCount', {
         headers: {
           Authorization: `Bearer ${authToken}`,
         },
@@ -102,7 +102,7 @@ export default function HomenotLogged() {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch('http://localhost:5000/product/all');
+      const response = await fetch('https://musicartapi.onrender.com/product/all');
       const data = await response.json();
       setProducts(data);
     } catch (error) {
@@ -117,7 +117,7 @@ export default function HomenotLogged() {
   useEffect(() => {
     const fetchTypes = async () => {
       try {
-        const response = await fetch('http://localhost:5000/product/headphoneTypes');
+        const response = await fetch('https://musicartapi.onrender.com/product/headphoneTypes');
         const data = await response.json();
         setTypes(data);
       } catch (error) {
@@ -172,13 +172,13 @@ export default function HomenotLogged() {
   const fetchFilteredProducts = async (filters) => {
     try {
       const { minPrice, maxPrice, brand, color } = filters;
-      let url = `http://localhost:5000/product/all`;
+      let url = `https://musicartapi.onrender.com/product/all`;
       if (minPrice !== undefined && maxPrice !== undefined) {
-        url = `http://localhost:5000/product/price/${minPrice}/${maxPrice}`;
+        url = `https://musicartapi.onrender.com/product/price/${minPrice}/${maxPrice}`;
       } else if (brand !== undefined) {
-        url = `http://localhost:5000/product/brand/${brand}`;
+        url = `https://musicartapi.onrender.com/product/brand/${brand}`;
       } else if (color !== undefined) {
-        url = `http://localhost:5000/product/color/${color}`;
+        url = `https://musicartapi.onrender.com/product/color/${color}`;
       }
 
       const response = await fetch(url);
@@ -252,7 +252,7 @@ export default function HomenotLogged() {
           const userId = localStorage.getItem('userId');
   
           const response = await axios.post(
-            'http://localhost:5000/feed/feedback',
+            'https://musicartapi.onrender.com/feed/feedback',
             {
               type: feedbackType,
               feedbackText: detailedFeedback,
