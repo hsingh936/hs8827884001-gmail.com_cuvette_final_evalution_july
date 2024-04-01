@@ -45,7 +45,7 @@ export default function Invoice() {
             const authToken = localStorage.getItem('authToken');
             const userId = localStorage.getItem('userId');
 
-            const response = await axios.get(`http://localhost:5000/checkout/invoice/${userId}`, {
+            const response = await axios.get(`https://musicartapi.onrender.com/checkout/invoice/${userId}`, {
                 headers: {
                     Authorization: `Bearer ${authToken}`,
                 },
