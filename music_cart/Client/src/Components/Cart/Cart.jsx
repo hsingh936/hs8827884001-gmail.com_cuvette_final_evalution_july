@@ -44,7 +44,7 @@ export default function Cart() {
   const fetchCartItems = async () => {
     try {
       const token = localStorage.getItem('authToken');
-      const response = await axios.get('http://localhost:5000/cart/mycart', {
+      const response = await axios.get('https://musicartapi.onrender.com/cart/mycart', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
