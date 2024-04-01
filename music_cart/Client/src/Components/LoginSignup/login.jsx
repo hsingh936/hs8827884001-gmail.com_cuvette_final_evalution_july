@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios'; // Import axios
+import axios from 'axios';
 import styles from './login.module.css'; 
 import Logo from '../../images/logo.png';
 
@@ -8,6 +8,7 @@ export default function Login({ setUserId }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false); 
   const navigate = useNavigate();
   const [showWelcome, setShowWelcome] = useState(false);
   const [showAccountText, setShowAccountText] = useState(false);
@@ -33,6 +34,7 @@ export default function Login({ setUserId }) {
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
+      setLoading(true); 
       try {
         const response = await axios.post('https://musicartapi.onrender.com/auth/login', {
           email,
@@ -46,11 +48,11 @@ export default function Login({ setUserId }) {
         localStorage.setItem('userId', userId);
 
         setUserId(userId);
-       
+        setLoading(false); 
         navigate('/home');
       } catch (error) {
         console.error('Error logging in:', error);
-        
+        setLoading(false); 
       }
     }
   };
@@ -115,7 +117,7 @@ export default function Login({ setUserId }) {
             </div>
 
             <div className={styles.contbtn}>
-              <button onClick={handleSubmit}>Continue</button>
+              <button onClick={handleSubmit} disabled={loading}>{loading ? 'Loading...' : 'Continue'}</button>
             </div>
 
             <div className={styles.para}>
@@ -123,13 +125,11 @@ export default function Login({ setUserId }) {
             </div>
           </div>
 
-         
-            <div className={styles.siginPara}>
-              <span className={styles.separatorLine}></span>
-              <span className={styles.siginParatext}>New to Musicart?</span>
-              <span className={styles.separatorLine}></span> 
-            </div>
-    
+          <div className={styles.siginPara}>
+            <span className={styles.separatorLine}></span>
+            <span className={styles.siginParatext}>New to Musicart?</span>
+            <span className={styles.separatorLine}></span> 
+          </div>
 
           <div className={styles.footer}>
             <button className={styles.siginBtn} onClick={handleSignUpClick}>Create your Musicart account</button>
