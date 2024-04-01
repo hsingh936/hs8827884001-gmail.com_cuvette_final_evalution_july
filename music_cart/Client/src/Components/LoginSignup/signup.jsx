@@ -46,7 +46,7 @@ const Signup = () => {
   const handleSubmit = async () => {
     if (validateForm()) {
       try {
-        const response = await axios.post('http://localhost:5000/auth/signup', {
+        const response = await axios.post('https://musicartapi.onrender.com/auth/signup', {
           name,
           mobile,
           email,
