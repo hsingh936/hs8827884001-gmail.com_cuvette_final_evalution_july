@@ -49,7 +49,7 @@ export default function Checkout() {
 
       const authToken = localStorage.getItem('authToken');
 
-      const response = await axios.get(`http://localhost:5000/auth/username`, {
+      const response = await axios.get(`https://musicartapi.onrender.com/auth/username`, {
         headers: {
           Authorization: `Bearer ${authToken}`,
         },
@@ -66,7 +66,7 @@ export default function Checkout() {
   useEffect(() => {
     const fetchCartItems = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/cart/mycart', {
+        const response = await axios.get('https://musicartapi.onrender.com/cart/mycart', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('authToken')}`,
           },
@@ -91,7 +91,7 @@ export default function Checkout() {
       const paymentMethod = document.getElementById('paymentDropdown').value;
 
       const response = await axios.post(
-        'http://localhost:5000/checkout/check',
+        'https://musicartapi.onrender.com/checkout/check',
         {
           userId: localStorage.getItem('userId'),
           userName,
